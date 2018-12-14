@@ -1,14 +1,14 @@
 package com.example.shreysindher.aura_design;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
 import com.mukesh.OnOtpCompletionListener;
 import com.mukesh.OtpView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class OtpActivity extends AppCompatActivity {
 
@@ -24,6 +24,7 @@ public class OtpActivity extends AppCompatActivity {
             @Override public void onOtpCompleted(String otp) {
 
                 Toast.makeText(OtpActivity.this, otp, Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(OtpActivity.this, CombinedActivity.class));
                 // do Stuff
                 Log.d("onOtpCompleted=>", otp);
             }

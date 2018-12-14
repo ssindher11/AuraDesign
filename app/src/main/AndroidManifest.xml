@@ -22,7 +22,8 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity android:name=".SignupActivity" />
-        <activity android:name=".OtpActivity"></activity>
+        <activity android:name=".OtpActivity" />
+        <activity android:name=".CombinedActivity"></activity>
     </application>
 
 </manifest>
